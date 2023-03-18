@@ -2,6 +2,7 @@ import junit.framework.TestCase;
 
 import java.util.Random;
 import java.util.concurrent.ForkJoinPool;
+import java.util.stream.IntStream;
 
 public class FindInArrayTest extends TestCase {
 
@@ -14,6 +15,12 @@ public class FindInArrayTest extends TestCase {
         /* Check  random array
         Arrays.stream(arr).forEach(System.out::println);*/
         return arr;
+    }
+
+    @SuppressWarnings("unused")
+    private int[] intStream(int size) {
+        IntStream intStream = IntStream.range(1, size);
+        return intStream.toArray();
     }
 
     public void testFindInArraySeq() {
