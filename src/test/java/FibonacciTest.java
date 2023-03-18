@@ -4,7 +4,7 @@ import junit.framework.TestCase;
 @SuppressWarnings("SpellCheckingInspection")
 public class FibonacciTest extends TestCase {
 
-    int n=40;
+    int n=50;
 
     public void testFiboPP(){
         long start = System.currentTimeMillis();
