@@ -4,9 +4,12 @@ import junit.framework.TestCase;
 
 import java.util.Random;
 
+@SuppressWarnings("SpellCheckingInspection")
 public class StudentAnalyticsTest extends TestCase {
     final static int REPEATS = 10;
+    @SuppressWarnings("SpellCheckingInspection")
     private final static String[] firstNames = {"Sanjay", "Yunming", "John", "Vivek", "Shams", "Max"};
+    @SuppressWarnings("SpellCheckingInspection")
     private final static String[] lastNames = {"Chatterjee", "Zhang", "Smith", "Sarkar", "Imam", "Grossman"};
 
     private static int getNCores() {
@@ -75,6 +78,7 @@ public class StudentAnalyticsTest extends TestCase {
      * Test performance of averageAgeOfEnrolledStudentsParallelStream.
      */
     public void testAverageAgeOfEnrolledStudentsPerf() {
+        //noinspection unused
         final int ncores = getNCores();
         final double speedup = averageAgeOfEnrolledStudentsHelper(REPEATS);
         String msg = "Expected parallel version to run at least 1.2x faster but speedup was " + speedup;
@@ -159,6 +163,7 @@ public class StudentAnalyticsTest extends TestCase {
      * Test performance of countNumberOfFailedStudentsOlderThan20ParallelStream.
      */
     public void testCountNumberOfFailedStudentsOlderThan20Perf() {
+        //noinspection unused
         final int ncores = getNCores();
         final double speedup = countNumberOfFailedStudentsOlderThan20Helper(REPEATS);
         String msg = "Expected parallel version to run at least 1.2x faster but speedup was " + speedup;

@@ -42,10 +42,10 @@ public class FindInArray extends RecursiveAction {
     }
 
     public void computeSeqStream() {
-        count = (int) Arrays.stream(arr).asLongStream().sequential().filter(x -> x == number).count();
+        count = (int) Arrays.stream(arr).sequential().filter(x -> x == number).count();
     }
 
     public void computePPStream() {
-        count = (int) Arrays.stream(arr).asLongStream().parallel().filter(x -> x == number).count();
+        count = (int) Arrays.stream(arr).parallel().filter(x -> x == number).count();
     }
 }
