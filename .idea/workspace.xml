@@ -4,11 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9a76314-bee5-4470-a5db-098ecbbeb1c8" name="Changes" comment="Adding Student Project (Second Question) classes">
+    <list default="true" id="b9a76314-bee5-4470-a5db-098ecbbeb1c8" name="Changes" comment="Question 2 Solution">
+      <change afterPath="$PROJECT_DIR$/src/main/java/Fibonacci.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/test/java/FibonacciTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FindInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/parallel/StudentAnalytics.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/parallel/StudentAnalytics.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/parallel/StudentAnalyticsTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/parallel/StudentAnalyticsTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -49,35 +48,35 @@
       <recent name="C:\Users\ASUS\Desktop\HIAST5\Term 2\Parallel Programing\Labs\Lab 1\Homework 1\Parallel Programing using Java - HW1 - Rami Issa\Homework1\src\main\java" />
     </key>
     <key name="CopyClassDialog.RECENTS_KEY">
+      <recent name="" />
       <recent name="parallel" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindInArrayTest">
-    <configuration name="FindInArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+  <component name="RunManager" selected="JUnit.FibonacciTest">
+    <configuration name="FibonacciTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Homework1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FindInArrayTest" />
+      <option name="MAIN_CLASS_NAME" value="FibonacciTest" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindInArrayTest.testFindInArrayPP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FibonacciTest.testFiboPP" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Homework1" />
       <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FindInArrayTest" />
-      <option name="METHOD_NAME" value="testFindInArrayPP" />
+      <option name="MAIN_CLASS_NAME" value="FibonacciTest" />
+      <option name="METHOD_NAME" value="testFiboPP" />
       <option name="TEST_OBJECT" value="method" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindInArrayTest.testFindInArraySeq" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindInArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Homework1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FindInArrayTest" />
-      <option name="METHOD_NAME" value="testFindInArraySeq" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -115,11 +114,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FibonacciTest" />
+        <item itemvalue="JUnit.FibonacciTest.testFiboPP" />
         <item itemvalue="JUnit.FindInArrayTest" />
         <item itemvalue="JUnit.StudentAnalyticsTest" />
         <item itemvalue="JUnit.StudentAnalyticsTest.testAverageAgeOfEnrolledStudents" />
-        <item itemvalue="JUnit.FindInArrayTest.testFindInArrayPP" />
-        <item itemvalue="JUnit.FindInArrayTest.testFindInArraySeq" />
       </list>
     </recent_temporary>
   </component>
@@ -153,7 +152,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679158787600</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Question 2 Solution">
+      <created>1679161478237</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1679161478237</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -183,6 +189,7 @@
     <MESSAGE value="First Create" />
     <MESSAGE value="First Question Solution in class FindInArray" />
     <MESSAGE value="Adding Student Project (Second Question) classes" />
-    <option name="LAST_COMMIT_MESSAGE" value="Adding Student Project (Second Question) classes" />
+    <MESSAGE value="Question 2 Solution" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question 2 Solution" />
   </component>
 </project>
