@@ -10,14 +10,14 @@ However, besides being a dumb way to compute Fibonacci functions (there is a sim
  you'd pick some minimum granularity size (for example 10 here) for which you always sequentially solve rather than subdividing.
  */
 
-public class Fibonacci extends RecursiveTask<Integer> {
+public class Fibonacci extends RecursiveTask<Long> {
     final int n;
-    private static final Map<Integer, Integer> calculatedResults = new HashMap<>();
+    private static final Map<Integer, Long> calculatedResults = new HashMap<>();
     public Fibonacci(int n) { this.n = n; }
 
-    public Integer compute() {
+    public Long compute() {
 
-        Integer calculatedResult = calculatedResults.get(n);
+        Long calculatedResult = calculatedResults.get(n);
         if (calculatedResult != null) {
             return calculatedResult;
         }
@@ -25,7 +25,7 @@ public class Fibonacci extends RecursiveTask<Integer> {
             Fibonacci f1 = new Fibonacci(n - 1);
             f1.fork();
             Fibonacci f2 = new Fibonacci(n - 2);
-            Integer result = f2.compute() + f1.join();
+            Long result = f2.compute() + f1.join();
             calculatedResults.put(n, result);
             return result;
         }else{
@@ -33,16 +33,16 @@ public class Fibonacci extends RecursiveTask<Integer> {
         }
     }
 
-    public Integer computeSeq() {
+    public Long computeSeq() {
         if (n <= 1)
-            return n;
-        Integer calculatedResult = calculatedResults.get(n);
+            return (long) n;
+        Long calculatedResult = calculatedResults.get(n);
         if (calculatedResult != null) {
             return calculatedResult;
         }
         Fibonacci f1 = new Fibonacci(n - 1);
         Fibonacci f2 = new Fibonacci(n - 2);
-        Integer result = f2.computeSeq() + f1.computeSeq();
+        Long result = f2.computeSeq() + f1.computeSeq();
         calculatedResults.put(n, result);
         return result;
     }
