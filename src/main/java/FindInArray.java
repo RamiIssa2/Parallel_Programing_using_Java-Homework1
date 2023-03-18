@@ -1,10 +1,13 @@
-import java.util.concurrent.RecursiveTask;
+import java.util.Arrays;
+import java.util.concurrent.RecursiveAction;
 
-public class FindInArray extends RecursiveTask<Integer> {
+public class FindInArray extends RecursiveAction {
 
     final int number;
-
-    int arr[], lo, hi;
+    public int count;
+    int[] arr;
+    int lo;
+    int hi;
 
 
     public FindInArray(int[] arr, int lo, int hi, int number) {
@@ -14,8 +17,35 @@ public class FindInArray extends RecursiveTask<Integer> {
         this.hi = hi;
     }
 
+    public void computeSeq() {
+        for (int i = lo; i <= hi; ++i) {
+            if (arr[i] == number){
+                count++;
+            }
+        }
+    }
+
     @Override
-    protected Integer compute() {
-        return null;
+    protected void compute() {
+        if (hi - lo > 1_000_000) {
+            int mid = (lo + hi) / 2;
+            FindInArray left = new FindInArray(arr, lo, mid, number);
+            FindInArray right = new FindInArray(arr, mid + 1, hi, number);
+            left.fork();
+            right.compute();
+            left.join();
+            count = left.count + right.count;
+        }
+        else {
+            this.computeSeq();
+        }
+    }
+
+    public void computeSeqStream() {
+        count = (int) Arrays.stream(arr).asLongStream().sequential().filter(x -> x == number).count();
+    }
+
+    public void computePPStream() {
+        count = (int) Arrays.stream(arr).asLongStream().parallel().filter(x -> x == number).count();
     }
 }
