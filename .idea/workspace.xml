@@ -4,10 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9a76314-bee5-4470-a5db-098ecbbeb1c8" name="Changes" comment="Question 3 Solution test for n = 50">
+    <list default="true" id="b9a76314-bee5-4470-a5db-098ecbbeb1c8" name="Changes" comment="Question 3 Solution fixing the result to type long and calculating the time in nano seconds">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Fibonacci.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Fibonacci.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/FindInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindInArray.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/FibonacciTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FibonacciTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/test/java/FindInArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindInArrayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -33,16 +34,16 @@
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
   </component>
-  <component name="PropertiesComponent"><![CDATA[{
-  "keyToString": {
-    "RunOnceActivity.OpenProjectViewOnStart": "true",
-    "RunOnceActivity.ShowReadmeOnStart": "true",
-    "last_opened_file_path": "C:/Users/ASUS/Desktop/HIAST5/Term 2/Parallel Programing/Labs/Lab 1/Homework 1/Parallel Programing using Java - HW1 - Rami Issa/Homework1/src/main/java",
-    "project.structure.last.edited": "Libraries",
-    "project.structure.proportion": "0.0",
-    "project.structure.side.proportion": "0.2"
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;last_opened_file_path&quot;: &quot;C:/Users/ASUS/Desktop/HIAST5/Term 2/Parallel Programing/Labs/Lab 1/Homework 1/Parallel Programing using Java - HW1 - Rami Issa/Homework1/src/main/java&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.2&quot;
   }
-}]]></component>
+}</component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
       <recent name="C:\Users\ASUS\Desktop\HIAST5\Term 2\Parallel Programing\Labs\Lab 1\Homework 1\Parallel Programing using Java - HW1 - Rami Issa\Homework1\src\main\java" />
@@ -57,6 +58,7 @@
       <module name="Homework1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FibonacciTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -68,6 +70,17 @@
       <option name="MAIN_CLASS_NAME" value="FibonacciTest" />
       <option name="METHOD_NAME" value="testFiboPP" />
       <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="FindInArrayTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="Homework1" />
+      <option name="PACKAGE_NAME" value="" />
+      <option name="MAIN_CLASS_NAME" value="FindInArrayTest" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Xms512M -Xmx4096m" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -96,29 +109,29 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="StudentAnalyticsTest.testAverageAgeOfEnrolledStudents" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration default="true" type="JUnit" factoryName="JUnit">
       <module name="Homework1" />
-      <extension name="coverage">
-        <pattern>
-          <option name="PATTERN" value="parallel.*" />
-          <option name="ENABLED" value="true" />
-        </pattern>
-      </extension>
-      <option name="PACKAGE_NAME" value="parallel" />
-      <option name="MAIN_CLASS_NAME" value="parallel.StudentAnalyticsTest" />
-      <option name="METHOD_NAME" value="testAverageAgeOfEnrolledStudents" />
-      <option name="TEST_OBJECT" value="method" />
+      <option name="METHOD_NAME" value="" />
+      <option name="TEST_OBJECT" value="class" />
+      <option name="VM_PARAMETERS" value="-Xms512M -Xmx4096m" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <list>
+      <item itemvalue="JUnit.FindInArrayTest (1)" />
+      <item itemvalue="JUnit.FibonacciTest" />
+      <item itemvalue="JUnit.FibonacciTest.testFiboPP" />
+      <item itemvalue="JUnit.FindInArrayTest" />
+      <item itemvalue="JUnit.StudentAnalyticsTest" />
+    </list>
     <recent_temporary>
       <list>
         <item itemvalue="JUnit.FibonacciTest" />
+        <item itemvalue="JUnit.StudentAnalyticsTest" />
+        <item itemvalue="JUnit.FindInArrayTest (1)" />
         <item itemvalue="JUnit.FibonacciTest.testFiboPP" />
         <item itemvalue="JUnit.FindInArrayTest" />
-        <item itemvalue="JUnit.StudentAnalyticsTest" />
-        <item itemvalue="JUnit.StudentAnalyticsTest.testAverageAgeOfEnrolledStudents" />
       </list>
     </recent_temporary>
   </component>
@@ -173,7 +186,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679162433592</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Question 3 Solution fixing the result to type long and calculating the time in nano seconds">
+      <created>1679163218662</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1679163218662</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -206,6 +226,7 @@
     <MESSAGE value="Question 2 Solution" />
     <MESSAGE value="Question 3 Solution" />
     <MESSAGE value="Question 3 Solution test for n = 50" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question 3 Solution test for n = 50" />
+    <MESSAGE value="Question 3 Solution fixing the result to type long and calculating the time in nano seconds" />
+    <option name="LAST_COMMIT_MESSAGE" value="Question 3 Solution fixing the result to type long and calculating the time in nano seconds" />
   </component>
 </project>

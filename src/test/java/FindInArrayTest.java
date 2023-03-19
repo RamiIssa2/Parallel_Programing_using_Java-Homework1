@@ -6,14 +6,15 @@ import java.util.stream.IntStream;
 
 public class FindInArrayTest extends TestCase {
 
+
+    private final int size = 1_000_000_000;
+    @SuppressWarnings("SameParameterValue")
     private int[] randomArray(int size) {
         Random rand = new Random();
         int[] arr = new int[size];
         for (int i = 0; i < size; i++) {
             arr[i] = rand.nextInt(1,100_001);
         }
-        /* Check  random array
-        Arrays.stream(arr).forEach(System.out::println);*/
         return arr;
     }
 
@@ -25,7 +26,6 @@ public class FindInArrayTest extends TestCase {
 
     public void testFindInArraySeq() {
 
-        int size = 100_000_000;
         int number = 5000;
         int[] arr = randomArray(size);
 
@@ -34,12 +34,11 @@ public class FindInArrayTest extends TestCase {
         array.computeSeq();
         int count = array.count;
         long endTimer = System.currentTimeMillis() - start;
-        System.out.printf("Sequential Time execution for Random Array of size %d is %d ms count is %d\n", size, endTimer, count);
+        System.out.printf("Sequential Time execution for Random Array of size %d is %d ms count is %d\n\n", size, endTimer, count);
     }
 
     public void testFindInArrayPP() {
 
-        int size = 100_000_000;
         int number = 5000;
         int[] arr = randomArray(size);
 
@@ -48,12 +47,11 @@ public class FindInArrayTest extends TestCase {
         ForkJoinPool.commonPool().invoke(array);
         int count = array.count;
         long endTimer = System.currentTimeMillis() - start;
-        System.out.printf("Parallel Time execution for Random Array of size %d is %d ms count is %d\n", size, endTimer, count);
+        System.out.printf("Parallel Time execution for Random Array of size %d is %d ms count is %d\n\n", size, endTimer, count);
     }
 
     public void testFindInArraySeqStream() {
 
-        int size = 100_000_000;
         int number = 5000;
         int[] arr = randomArray(size);
 
@@ -62,12 +60,11 @@ public class FindInArrayTest extends TestCase {
         array.computeSeqStream();
         int count = array.count;
         long endTimer = System.currentTimeMillis() - start;
-        System.out.printf("Sequential Stream Time execution for Random Array of size %d is %d ms count is %d\n", size, endTimer, count);
+        System.out.printf("Sequential Stream Time execution for Random Array of size %d is %d ms count is %d\n\n", size, endTimer, count);
     }
 
     public void testFindInArrayPPStream() {
 
-        int size = 100_000_000;
         int number = 5000;
         int[] arr = randomArray(size);
 
@@ -76,6 +73,6 @@ public class FindInArrayTest extends TestCase {
         array.computePPStream();
         int count = array.count;
         long endTimer = System.currentTimeMillis() - start;
-        System.out.printf("Parallel Stream Time execution for Random Array of size %d is %d ms count is %d\n", size, endTimer, count);
+        System.out.printf("Parallel Stream Time execution for Random Array of size %d is %d ms count is %d\n\n", size, endTimer, count);
     }
 }

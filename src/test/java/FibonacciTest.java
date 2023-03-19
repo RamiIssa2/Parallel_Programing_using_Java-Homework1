@@ -13,8 +13,8 @@ public class FibonacciTest extends TestCase {
         long res = fib.compute();
         long end = System.currentTimeMillis() - start;
         long endNano = System.nanoTime() - startNano;
-        System.out.printf("Fibonacci for %d is %d, and parallel execution took %d ms or %d ns\n",n,res,end,endNano);
-//        Fibonacci parallel takes 144269 fon n = 50 before enhancement 1
+        System.out.println("Fibonacci parallel takes 144269 ms for n = 50 before enhancement");
+        System.out.printf("Fibonacci for n = %d is %d, and parallel execution took %d ms or %d ns after enhancement\n\n",n,res,end,endNano);
     }
 
     public void testFiboSeq(){
@@ -24,7 +24,7 @@ public class FibonacciTest extends TestCase {
         long res = fib.computeSeq();
         long end = System.currentTimeMillis()-start;
         long endNano = System.nanoTime() - startNano;
-        System.out.printf("Fibonacci for %d is %d, and sequential execution took %d ms or %d ns\n",n,res,end,endNano);
-        //Fibonacci Sequential takes 86495 fon n = 50 before enhancement 1
+        System.out.println("Fibonacci Sequential takes 86495 ms for n = 50 before enhancement");
+        System.out.printf("Fibonacci for n = %d is %d, and sequential execution took %d ms or %d ns after enhancement\n\n",n,res,end,endNano);
     }
 }

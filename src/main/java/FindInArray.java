@@ -42,7 +42,7 @@ public class FindInArray extends RecursiveAction {
     }
 
     public void computeSeqStream() {
-        count = (int) Arrays.stream(arr).sequential().filter(x -> x == number).count();
+        count = (int) Arrays.stream(arr).filter(x -> x == number).count();
     }
 
     public void computePPStream() {
