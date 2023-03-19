@@ -4,11 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9a76314-bee5-4470-a5db-098ecbbeb1c8" name="Changes" comment="Question 3 Solution fixing the result to type long and calculating the time in nano seconds">
+    <list default="true" id="b9a76314-bee5-4470-a5db-098ecbbeb1c8" name="Changes" comment="Final fixes and organizing the output">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/FindInArray.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/FindInArray.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FibonacciTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FibonacciTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/FindInArrayTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/FindInArrayTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -53,7 +50,7 @@
       <recent name="parallel" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FibonacciTest">
+  <component name="RunManager" selected="JUnit.FindInArrayTest (1)">
     <configuration name="FibonacciTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Homework1" />
       <option name="PACKAGE_NAME" value="" />
@@ -85,15 +82,6 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindInArrayTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
-      <module name="Homework1" />
-      <option name="PACKAGE_NAME" value="" />
-      <option name="MAIN_CLASS_NAME" value="FindInArrayTest" />
-      <option name="TEST_OBJECT" value="class" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
     <configuration name="StudentAnalyticsTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Homework1" />
       <extension name="coverage">
@@ -104,6 +92,7 @@
       </extension>
       <option name="PACKAGE_NAME" value="parallel" />
       <option name="MAIN_CLASS_NAME" value="parallel.StudentAnalyticsTest" />
+      <option name="METHOD_NAME" value="" />
       <option name="TEST_OBJECT" value="class" />
       <method v="2">
         <option name="Make" enabled="true" />
@@ -122,16 +111,14 @@
       <item itemvalue="JUnit.FindInArrayTest (1)" />
       <item itemvalue="JUnit.FibonacciTest" />
       <item itemvalue="JUnit.FibonacciTest.testFiboPP" />
-      <item itemvalue="JUnit.FindInArrayTest" />
       <item itemvalue="JUnit.StudentAnalyticsTest" />
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.FindInArrayTest (1)" />
         <item itemvalue="JUnit.FibonacciTest" />
         <item itemvalue="JUnit.StudentAnalyticsTest" />
-        <item itemvalue="JUnit.FindInArrayTest (1)" />
         <item itemvalue="JUnit.FibonacciTest.testFiboPP" />
-        <item itemvalue="JUnit.FindInArrayTest" />
       </list>
     </recent_temporary>
   </component>
@@ -193,7 +180,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679163218662</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="Final fixes and organizing the output">
+      <created>1679221589164</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1679221589164</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -227,6 +221,7 @@
     <MESSAGE value="Question 3 Solution" />
     <MESSAGE value="Question 3 Solution test for n = 50" />
     <MESSAGE value="Question 3 Solution fixing the result to type long and calculating the time in nano seconds" />
-    <option name="LAST_COMMIT_MESSAGE" value="Question 3 Solution fixing the result to type long and calculating the time in nano seconds" />
+    <MESSAGE value="Final fixes and organizing the output" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final fixes and organizing the output" />
   </component>
 </project>
