@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="b9a76314-bee5-4470-a5db-098ecbbeb1c8" name="Changes" comment="Final fixes and organizing the output">
+    <list default="true" id="b9a76314-bee5-4470-a5db-098ecbbeb1c8" name="Changes" comment="Final fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -50,7 +50,7 @@
       <recent name="parallel" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.FindInArrayTest (1)">
+  <component name="RunManager" selected="JUnit.FibonacciTest">
     <configuration name="FibonacciTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
       <module name="Homework1" />
       <option name="PACKAGE_NAME" value="" />
@@ -71,7 +71,7 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
-    <configuration name="FindInArrayTest (1)" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+    <configuration name="FindInArrayTest " type="JUnit" factoryName="JUnit" temporary="true">
       <module name="Homework1" />
       <option name="PACKAGE_NAME" value="" />
       <option name="MAIN_CLASS_NAME" value="FindInArrayTest" />
@@ -108,15 +108,15 @@
       </method>
     </configuration>
     <list>
-      <item itemvalue="JUnit.FindInArrayTest (1)" />
+      <item itemvalue="JUnit.FindInArrayTest " />
       <item itemvalue="JUnit.FibonacciTest" />
       <item itemvalue="JUnit.FibonacciTest.testFiboPP" />
       <item itemvalue="JUnit.StudentAnalyticsTest" />
     </list>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.FindInArrayTest (1)" />
         <item itemvalue="JUnit.FibonacciTest" />
+        <item itemvalue="JUnit.FindInArrayTest " />
         <item itemvalue="JUnit.StudentAnalyticsTest" />
         <item itemvalue="JUnit.FibonacciTest.testFiboPP" />
       </list>
@@ -187,7 +187,14 @@
       <option name="project" value="LOCAL" />
       <updated>1679221589164</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Final fix">
+      <created>1679221768604</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1679221768604</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -222,6 +229,7 @@
     <MESSAGE value="Question 3 Solution test for n = 50" />
     <MESSAGE value="Question 3 Solution fixing the result to type long and calculating the time in nano seconds" />
     <MESSAGE value="Final fixes and organizing the output" />
-    <option name="LAST_COMMIT_MESSAGE" value="Final fixes and organizing the output" />
+    <MESSAGE value="Final fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Final fix" />
   </component>
 </project>
